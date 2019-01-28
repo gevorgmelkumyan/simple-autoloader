@@ -1,0 +1,109 @@
+<svg width="215" height="215" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path id="one" d="M100 300 L 100 400 L 0 300 Z" fill="transparent" stroke="white" stroke-width="2"/>
+    <path id="two" d="M115 300 L 115 350 L 165 300 Z" fill="transparent" stroke="white" stroke-width="2"/>
+    <path id="three" d="M100 285 L 0 285 L 100 235 Z" fill="transparent" stroke="white" stroke-width="2"/>
+    <path id="four" d="M115 285 L 115 185 L 165 285 Z" fill="transparent" stroke="white" stroke-width="2"/>
+
+    // ONE
+    <animate id="anim_one_1" xlink:href="#one" attributeName="d" attributeType="XML"
+             from="M100 115 L 100 215 L 0 115 Z"
+             to="M100 115 L 100 165 L 50 115 Z"
+             begin="0;anim_one_4.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_one_2" xlink:href="#one" attributeName="d" attributeType="XML"
+             from="M100 115 L 100 165 L 50 115 Z"
+             to="M100 115 L 100 165 L 0 115 Z"
+             begin="anim_one_1.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_one_3" xlink:href="#one" attributeName="d" attributeType="XML"
+             from="M100 115 L 100 165 L 0 115 Z"
+             to="M100 115 L 100 215 L 50 115 Z"
+             begin="anim_one_2.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_one_4" xlink:href="#one" attributeName="d" attributeType="XML"
+             from="M100 115 L 100 215 L 50 115 Z"
+             to="M100 115 L 100 215 L 0 115 Z"
+             begin="anim_one_3.end"
+             dur="3s"
+             fill="transparent"/>
+    // TWO
+    <animate id="anim_two_1" xlink:href="#two" attributeName="d" attributeType="XML"
+             from="M115 115 L 115 165 L 165 115 Z"
+             to="M115 115 L 115 215 L 215 115 Z"
+             begin="0;anim_two_4.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_two_2" xlink:href="#two" attributeName="d" attributeType="XML"
+             from="M115 115 L 115 215 L 215 115 Z"
+             to="M115 115 L 115 215 L 165 115 Z"
+             begin="anim_two_1.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_two_3" xlink:href="#two" attributeName="d" attributeType="XML"
+             from="M115 115 L 115 215 L 165 115 Z"
+             to="M115 115 L 115 165 L 215 115 Z"
+             begin="anim_two_2.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_two_4" xlink:href="#two" attributeName="d" attributeType="XML"
+             from="M115 115 L 115 165 L 215 115 Z"
+             to="M115 115 L 115 165 L 165 115 Z"
+             begin="anim_two_3.end"
+             dur="3s"
+             fill="transparent"/>
+
+    // THREE
+    <animate id="anim_three_1" xlink:href="#three" attributeName="d" attributeType="XML"
+             from="M100 100 L 0 100 L 100 50 Z"
+             to="M100 100 L 50 100 L 100 50 Z"
+             begin="0;anim_three_4.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_three_2" xlink:href="#three" attributeName="d" attributeType="XML"
+             from="M100 100 L 50 100 L 100 50 Z"
+             to="M100 100 L 50 100 L 100 0 Z"
+             begin="anim_three_1.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_three_3" xlink:href="#three" attributeName="d" attributeType="XML"
+             from="M100 100 L 50 100 L 100 0 Z"
+             to="M100 100 L 0 100 L 100 0 Z"
+             begin="anim_three_2.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_three_4" xlink:href="#three" attributeName="d" attributeType="XML"
+             from="M100 100 L 0 100 L 100 0 Z"
+             to="M100 100 L 0 100 L 100 50 Z"
+             begin="anim_three_3.end"
+             dur="3s"
+             fill="transparent"/>
+
+    // FOUR
+    <animate id="anim_four_1" xlink:href="#four" attributeName="d" attributeType="XML"
+             from="M115 100 L 115 0 L 165 100 Z"
+             to="M115 100 L 115 50 L 165 100 Z"
+             begin="0;anim_four_4.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_four_2" xlink:href="#four" attributeName="d" attributeType="XML"
+             from="M115 100 L 115 50 L 165 100 Z"
+             to="M115 100 L 115 50 L 215 100 Z"
+             begin="anim_four_1.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_four_3" xlink:href="#four" attributeName="d" attributeType="XML"
+             from="M115 100 L 115 50 L 215 100 Z"
+             to="M115 100 L 115 0 L 215 100 Z"
+             begin="anim_four_2.end"
+             dur="3s"
+             fill="transparent"/>
+    <animate id="anim_four_4" xlink:href="#four" attributeName="d" attributeType="XML"
+             from="M115 100 L 115 0 L 215 100 Z"
+             to="M115 100 L 115 0 L 165 100 Z"
+             begin="anim_four_3.end"
+             dur="3s"
+             fill="transparent"/>
+</svg>
